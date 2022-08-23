@@ -2,6 +2,14 @@
 
 是 - hei3 - 嘿
 
+吃(食) - sia3
+
+吃早饭(食早) - sia3 bun3
+
+吃午饭(食午) - sia3 dao2
+
+吃早饭(食暝) - sia3 man3
+
 看 - kan2
 
 讲 - goung3 - 共
