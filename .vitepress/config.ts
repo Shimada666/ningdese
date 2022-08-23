@@ -2,46 +2,42 @@ import { defineConfig } from 'vitepress'
 
 const nav = [
   {
-    text: '文档',
-    activeMatch: '/docs/',
-    link: '/docs/module1'
+    text: '词汇',
+    activeMatch: '/word/',
+    link: '/word/noun'
   }
 ]
 
 const sidebar = {
-  '/docs/': [
+  '/word/': [
     {
-      text: '模块1',
-      link: '/docs/module1',
+      text: '词汇',
+      link: '/word/noun',
       items: [
-        { text: 'module1', link: '/docs/module1' },
-        { text: 'xxx', link: '/docs/xx' }
+        { text: '名词', link: '/word/noun' },
+        { text: '动词', link: '/word/verb' },
+        { text: '形容词', link: '/word/adjective' },
+        { text: '副词', link: '/word/adverb' },
+        { text: '代词', link: '/word/pronoun' }
       ]
-    },
-    {
-      text: '模块2',
-      link: '/docs/module2',
-      items: [
-        { text: 'module2', link: '/docs/module2' }
-      ]
-    },
+    }
   ]
 }
 
 
 export default defineConfig({
-  title: 'docs-template',
-  description: '一个 vitepress 文档模板，适用于 github 代码文档',
+  title: 'ningdese',
   lastUpdated: true,
+  srcDir: 'docs',
   themeConfig: {
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/Shimada666/docs-template'
+        link: 'https://github.com/Shimada666/ningdese'
       }
     ],
     editLink: {
-      pattern: 'https://github.com/shimada666/docs-template/edit/master/:path',
+      pattern: 'https://github.com/shimada666/ningdese/edit/master/docs/:path',
       text: 'Edit this page on GitHub'
     },
     footer: {
@@ -52,10 +48,7 @@ export default defineConfig({
     sidebar
   },
   vite: {
-    build: {
-      minify: 'terser',
-      chunkSizeWarningLimit: Infinity
-    }
+
   },
   vue: {
     reactivityTransform: true
